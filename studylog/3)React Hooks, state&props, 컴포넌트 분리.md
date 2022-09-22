@@ -108,7 +108,7 @@ List.js에서는 컴포넌트의 인자로 props를 받고 쓸 때는 props.todo
 
 - console.log(props)를 했을 때 왜인지 화면이 무한 로딩돼서 확인 못함..
 
-*인자로 props가 아닌 { todoData }를 넘겨주면 todoData를 쓸 때 props.를 안붙여줘도 됨!
+*인자로 props가 아닌 { todoData }를 넘겨주면(자바스크립트 비구조화 할당=구조분해 할당) todoData를 쓸 때 props.를 안붙여줘도 됨!
 
 아래의 두 표현은 같은데, 두 번째를 사용하여 더욱 분명하게 표현할 수 있다.
 

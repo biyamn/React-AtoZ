@@ -1,8 +1,6 @@
 import React from 'react';
 
-function List (props) {
-
-  console.log(props);
+function List ({ todoData, setTodoData }) {
 
   const btnStyle = {
     color: "#fff",
@@ -14,13 +12,13 @@ function List (props) {
   };
 
   const handleCompleteChange = (id) => {
-    let newTodoData = props.todoData.map(data => {
+    let newTodoData = todoData.map(data => {
       if(data.id === id) {
         data.completed = !data.completed;
       }
       return data;
     })
-    props.setTodoData(newTodoData);
+    setTodoData(newTodoData);
   };
 
   const getStyle = (completed) => {
@@ -32,14 +30,14 @@ function List (props) {
   };
 
   const handleClick = (id) => {
-    let newTodoData = props.todoData.filter(data => data.id !== id);
+    let newTodoData = todoData.filter(data => data.id !== id);
     console.log('newTodoData', newTodoData);
-    props.setTodoData(newTodoData);
+    setTodoData(newTodoData);
   };
 
   return (
     <div>
-      {props.todoData.map((data) => (
+      {todoData.map((data) => (
         <div style={getStyle(data.completed)} key={data.id}>
           <input type="checkbox" defaultChecked={false} onChange={() => handleCompleteChange(data.id)}/>
             {data.title}
