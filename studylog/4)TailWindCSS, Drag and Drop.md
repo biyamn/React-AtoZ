@@ -211,7 +211,12 @@ module.exports = {
 
 ## 동작 원리
 
+<<<<<<< HEAD
 ![%EC%BA%A1%EC%B2%98](https://user-images.githubusercontent.com/101965666/191924715-2278e9c3-7472-4d70-b0b6-c56aafb534b9.png)
+=======
+![%EC%BA%A1%EC%B2%98](https://user-images.githubusercontent.com/101965666/191926097-bea43c42-a076-4c8f-823c-faece0901cfc.png)
+
+>>>>>>> 1c4783d5fd94ab7c8b06bad0ce889122266f68d7
 
 
 ## [splice()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
@@ -226,8 +231,12 @@ module.exports = {
 
 ## 자바스크립트 타입을 통한 불변성 의미 살펴보기
 
+<<<<<<< HEAD
 ![%EC%BA%A1%EC%B2%98 1](https://user-images.githubusercontent.com/101965666/191924707-bc976e9e-8b94-4daa-9f0d-a0f26a696066.png)
 
+=======
+![%EC%BA%A1%EC%B2%98 1](https://user-images.githubusercontent.com/101965666/191926106-2a9ac012-c551-4668-9ac3-2ce06eda0d36.png)
+>>>>>>> 1c4783d5fd94ab7c8b06bad0ce889122266f68d7
 
 1. **원시 타입**: Boolean, String, Number, null, undefined, Symbol(**불변성을 가지고 있다**)
     - 고정된 크기로 Call Stack 메모리에 저장, 실제 데이터가 변수에 할당
