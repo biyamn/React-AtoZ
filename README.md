@@ -2,12 +2,7 @@
 
 ![KakaoTalk_20220925_204708867](https://user-images.githubusercontent.com/101965666/192220691-3a4c5efe-b65f-429f-ac46-a724fa20cd90.png)
 
-<br>
-
 <hr>
-
-<br>
-### Study Log 시작
 
 ### 2022.9.14 - 1)리액트 소개 및 설치, 실행
 ### 2022.9.15 - 2)Todo App 만들기
