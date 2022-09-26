@@ -1,4 +1,4 @@
-# 0922 -
+# 0922 - TailWindCSS, Drag and Drop
 
 # 구조 분해 할당(Destructring 비구조화 할당)
 
@@ -211,7 +211,8 @@ module.exports = {
 
 ## 동작 원리
 
-![캡처.PNG](0922%20-%207960e3db90634d3b8cd447bf1fd1bdc6/%25EC%25BA%25A1%25EC%25B2%2598.png)
+![%EC%BA%A1%EC%B2%98](https://user-images.githubusercontent.com/101965666/191924715-2278e9c3-7472-4d70-b0b6-c56aafb534b9.png)
+
 
 ## [splice()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
@@ -225,7 +226,8 @@ module.exports = {
 
 ## 자바스크립트 타입을 통한 불변성 의미 살펴보기
 
-![캡처.PNG](0922%20-%207960e3db90634d3b8cd447bf1fd1bdc6/%25EC%25BA%25A1%25EC%25B2%2598%201.png)
+![%EC%BA%A1%EC%B2%98 1](https://user-images.githubusercontent.com/101965666/191924707-bc976e9e-8b94-4daa-9f0d-a0f26a696066.png)
+
 
 1. **원시 타입**: Boolean, String, Number, null, undefined, Symbol(**불변성을 가지고 있다**)
     - 고정된 크기로 Call Stack 메모리에 저장, 실제 데이터가 변수에 할당
