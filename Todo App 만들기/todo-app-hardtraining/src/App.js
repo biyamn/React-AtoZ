@@ -6,10 +6,6 @@ function App() {
 
   const [todoList, setTodoList] = useState([]);
 
-  const onChangeInput = (e) => {
-    setText(e.target.value);
-  };
-
   const onSubmit = (e) => {
     const nextTodoList = todoList.concat({
       id: todoList.length,
@@ -23,6 +19,10 @@ function App() {
     e.preventDefault();
   };
 
+  const onChangeInput = (e) => {
+    setText(e.target.value);
+  };
+
   return (
     <div className='container'>
       <div className='contents'>
@@ -31,11 +31,13 @@ function App() {
 
         <form onSubmit={onSubmit}>
           <div className='lists'>
-            todoList.map((todoItem) =>(
+            {todoList.map((todoItem) =>(
+              <div>
               <input className='checkbox' type='checkbox'/>
               <span className='listContent'>{todoItem.text}</span>
               <button className='deleteBtn'>x</button>
-            ))
+              </div>
+            ))}
           </div>
 
           <div className='inputs'>
