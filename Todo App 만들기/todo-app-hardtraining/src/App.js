@@ -32,10 +32,10 @@ function App() {
         <form onSubmit={onSubmit}>
           <div className='lists'>
             {todoList.map((todoItem) =>(
-              <div>
-              <input className='checkbox' type='checkbox'/>
-              <span className='listContent'>{todoItem.text}</span>
-              <button className='deleteBtn'>x</button>
+              <div className='list'>
+                <input className='checkbox' type='checkbox'/>
+                <span className='listContent'>{todoItem.text}</span>
+                <button type='button' className='deleteBtn'>x</button>
               </div>
             ))}
           </div>
@@ -47,7 +47,6 @@ function App() {
               type='text' 
               placeholder='해야 할 일을 입력하세요.'
               value={text}
-              name='todoItem'
             />
             <input 
               className='inputSubmit' 

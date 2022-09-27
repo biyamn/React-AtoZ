@@ -29,7 +29,11 @@ h1 {
 }
 
 .lists {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.list {
   padding-bottom: 1rem;
 }
 
@@ -39,7 +43,7 @@ h1 {
 
 .inputs {
   display: flex;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .inputText {
@@ -49,5 +53,5 @@ h1 {
 
 .inputSubmit {
   flex: 1;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
