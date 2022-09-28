@@ -19,9 +19,9 @@ function App() {
     e.preventDefault();
   };
 
-  // const onChangeInput = (e) => {
-  //   setText(e.target.value);
-  // };
+  const onChangeInput = (e) => {
+    setText(e.target.value);
+  };
 
   return (
     <div className='container'>
@@ -42,7 +42,7 @@ function App() {
 
           <div className='inputs'>
             <input 
-              // onChange={onChangeInput} 
+              onChange={onChangeInput} 
               className='inputText' 
               type='text' 
               placeholder='해야 할 일을 입력하세요.'
