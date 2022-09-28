@@ -18,8 +18,11 @@ function App() {
     };
     
     // 원래 있던 일에 새로운 할 일 더해주기
+    // 아래 둘은 같은 의미!
+    setTodoData([...todoData, newTodo])
+    // setTodoData(prev => [...prev, newTodo]);
+
     // 입력란에 있던 글씨 지워주기
-    setTodoData(prev => [...prev, newTodo]);
     setValue('');
   }
     return (
