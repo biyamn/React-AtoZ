@@ -1,27 +1,42 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function App() {
+  const no = useRef(1);
+
   const [text, setText] = useState('');
 
   const [todoList, setTodoList] = useState([]);
 
   const onSubmit = (e) => {
+    e.preventDefault();
+    // 아니 이걸 맨 위쪽에 써주니까 갑자기 됨 왜일까???
+    // e.preventDefault();보다는 아래에 써줘야되는 걸 발견함
+    if (!text) return;
+   
     const nextTodoList = todoList.concat({
-      id: todoList.length,
+      id: no.current++,
       text,
       checked: false,
     });
-
+    
     setTodoList(nextTodoList);
-
     setText('');
-    e.preventDefault();
   };
 
   const onChangeInput = (e) => {
     setText(e.target.value);
   };
+
+  const checkedToggle = (id) => {
+    setTodoList(todoList.map(todoItem=>todoItem.id===id ?
+      {
+        ...todoItem,
+        checked: !todoItem.checked
+      }
+      : todoItem
+    ))
+  }
 
   return (
     <div className='container'>
@@ -32,8 +47,9 @@ function App() {
         <form onSubmit={onSubmit}>
           <div className='lists'>
             {todoList.map((todoItem) =>(
-              <div className='list'>
-                <input className='checkbox' type='checkbox'/>
+              // 
+              <div className='list' key={todoItem.id}>
+                <input onClick={()=>checkedToggle(todoItem.id)} className={`checkbox &{ checked ? 'checked' : '' }`} type='checkbox'/>
                 <span className='listContent'>{todoItem.text}</span>
                 <button type='button' className='deleteBtn'>x</button>
               </div>

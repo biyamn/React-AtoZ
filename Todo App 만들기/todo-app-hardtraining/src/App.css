@@ -55,3 +55,7 @@ h1 {
   flex: 1;
   font-size: 2rem;
 }
+
+.checked {
+  text-decoration: line-through;
+}
