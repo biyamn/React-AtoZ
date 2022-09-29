@@ -16,3 +16,4 @@
 ### 2022.9.21 - 3)React Hooks, state&props, 컴포넌트 분리
 ### 2022.9.22 - 4)TailWindCSS, Drag and Drop
 ### 2022.09.28 - <a href='https://velog.io/@hamham/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A1%9C-ToDo%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B02-%EC%B6%94%EA%B0%80%ED%8E%B8'>Todo App '추가 기능' 혼자 힘으로 구현하고 블로그 포스팅</a>
+### 2022.09.29 - 5)useCallback, useMemo, localStorage
