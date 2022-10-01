@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useRef } from 'react';
 
 function App() {
+  // useRef를 검색해서 썼음
   const no = useRef(1);
 
   const [text, setText] = useState('');
@@ -15,7 +16,7 @@ function App() {
     // 아니 이걸 맨 위쪽에 써주니까 갑자기 됨 왜일까???
     // e.preventDefault();보다는 아래에 써줘야되는 걸 발견함
     if (!text) return;
-   
+
     const nextTodoList = todoList.concat({
       id: no.current++,
       text,
@@ -45,10 +46,15 @@ function App() {
         <form onSubmit={onSubmit}>
           <div className='lists'>
             {todoList.map((todoItem) =>(
-              // Warning: Each child in a list should have a unique "key" porp
+              // Warning: Each child in a list should have a unique "key" prop 때문에 key 추가
               <div className='list' key={todoItem.id}>
-                <input onChange={()=>checkedToggle(todoItem.id)} className="checkbox" type='checkbox'/>
-                <span className={`listContent &{ todoItem.checked ? 'checked' : '' }`}>{todoItem.text}</span>
+                <input 
+                  onClick={()=>checkedToggle(todoItem.id)} 
+                  className="checkbox" 
+                  type='checkbox'
+                />
+                {/* <span className={`listContent &{ todoItem.checked ? 'checked' : '' }`}>{todoItem.text}</span> */}
+                <span className={ "listContent" + (todoItem.checked ? " checked" : '')}>{todoItem.text}</span>
                 <button type='button' className='deleteBtn'>x</button>
               </div>
             ))}
