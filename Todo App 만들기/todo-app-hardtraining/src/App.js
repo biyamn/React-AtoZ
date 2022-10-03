@@ -9,6 +9,12 @@ function App() {
 
   const [todoList, setTodoList] = useState([]);
 
+  const onDelete = (id) => {
+    setTodoList(todoList.filter(todoItem=>
+      todoItem.id !== id
+    ));
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -35,7 +41,7 @@ function App() {
     setTodoList(todoList.map(todoItem=>
       todoItem.id===id ? {...todoItem, checked: !todoItem.checked} : todoItem
     ))
-  }
+  };
 
   return (
     <div className='container'>
@@ -55,7 +61,11 @@ function App() {
                 />
                 {/* <span className={`listContent &{ todoItem.checked ? 'checked' : '' }`}>{todoItem.text}</span> */}
                 <span className={ "listContent" + (todoItem.checked ? " checked" : '')}>{todoItem.text}</span>
-                <button type='button' className='deleteBtn'>x</button>
+                <button 
+                  type='button' 
+                  className='deleteBtn'
+                  onClick={() => onDelete(todoItem.id)}
+                >X</button>
               </div>
             ))}
           </div>
