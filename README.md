@@ -18,3 +18,4 @@
 ### 2022.09.28 - <a href='https://velog.io/@hamham/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A1%9C-ToDo%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B02-%EC%B6%94%EA%B0%80%ED%8E%B8'>Todo App '추가 기능' 혼자 힘으로 구현하고 블로그 포스팅</a>
 ### 2022.09.29 - 5)useCallback, useMemo, localStorage
 ### 2022.10.01 - <a href='https://velog.io/@hamham/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A1%9C-ToDo%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B03-%EC%99%84%EB%A3%8C-%ED%91%9C%EC%8B%9C-%EC%82%AD%EC%A0%9C-%ED%8E%B8'>Todo App '완료 표시 기능' 혼자 힘으로 구현하고 블로그 포스팅</a>
+### 2022.10.03 - <a href='https://velog.io/@hamham/%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A1%9C-ToDo%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B04-%EC%82%AD%EC%A0%9C-%ED%8E%B8-9uqymceb'>Todo App '삭제 기능' 혼자 힘으로 구현하고 블로그 포스팅</a>
