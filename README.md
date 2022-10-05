@@ -4,10 +4,17 @@
 <br>
 
 ## 2. 폴더 소개
-#### 👉 studylog: 강의를 학습하고 정리하여 studylog 폴더에 업로드
-#### 👉 todo-app-기본: 강의에서 최적화 부분 전까지 듣고 따라서 만든 Todo App
-#### 👉 todo-app-최적화: 강의에서 최적화 부분까지 모두 듣고 따라서 만든 Todo App
-#### 👉 todo-app-hardtraining: 이전 코드를 보지 않고 혼자 힘&검색만으로 다시 만들어본 Todo App(이 과정은 블로그에 정리)
+#### 👉 studylog
+강의를 학습하고 정리하여 studylog 폴더에 업로드
+
+#### 👉 todo-app-기본
+강의에서 최적화 부분 전까지 듣고 따라서 만든 Todo App
+
+#### 👉 todo-app-최적화
+강의에서 최적화 부분까지 모두 듣고 따라서 만든 Todo App
+
+#### 👉 todo-app-hardtraining
+이전 코드를 보지 않고 혼자 힘&검색만으로 다시 만들어본 Todo App(이 과정은 블로그에 정리)
 
 <br>
 
