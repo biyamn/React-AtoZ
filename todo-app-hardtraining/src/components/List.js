@@ -4,13 +4,13 @@ const List = (props) => {
 
   const onDelete = (id) => {
     props.setTodoList(props.todoList.filter(todoItem=>
-      todoItem.id !== props.id
+      todoItem.id !== id
     ));
   };
 
   const checkedToggle = (id) => {
     props.setTodoList(props.todoList.map(todoItem=>
-      todoItem.id===props.id ? {...todoItem, checked: !todoItem.checked} : todoItem
+      todoItem.id===id ? {...todoItem, checked: !todoItem.checked} : todoItem
     ))
   };
 
