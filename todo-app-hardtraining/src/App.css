@@ -35,10 +35,25 @@ h1 {
 
 .list {
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.listContent {
+  display: flex;
+  flex: 14;
 }
 
 .deleteBtn {
-  float: right;
+  /* float: right; */
+  display: flex;
+  flex: 1;
+}
+
+.editBtn {
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .form {

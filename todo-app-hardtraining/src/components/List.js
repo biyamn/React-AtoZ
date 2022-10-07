@@ -21,8 +21,12 @@ const List = (props) => {
         className="checkbox" 
         type='checkbox'
       />
+
       {/* <span className={`listContent &{ todoItem.checked ? 'checked' : '' }`}>{todoItem.text}</span> */}
       <span className={ "listContent" + (props.checked ? " checked" : '')}>{props.text}</span>
+
+      <button className="editBtn">수정</button>
+
       <button 
         type='button' 
         className='deleteBtn'
