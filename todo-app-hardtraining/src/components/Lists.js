@@ -31,9 +31,11 @@ const Lists = (props) => {
                 // todoItem={todoItem} 
                 id={todoItem.id}
                 checked={todoItem.checked}
+                text={props.text}
+
                 todoList={props.todoList}
                 setTodoList={props.setTodoList}
-                text={props.text}
+                
               />
             ))}
           </div>
