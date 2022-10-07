@@ -31,8 +31,7 @@ const Lists = (props) => {
                 // todoItem={todoItem} 
                 id={todoItem.id}
                 checked={todoItem.checked}
-                text={props.text}
-
+                text={todoItem.text}
                 todoList={props.todoList}
                 setTodoList={props.setTodoList}
                 
