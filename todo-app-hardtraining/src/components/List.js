@@ -1,5 +1,7 @@
 import React from 'react';
 
+const [idEdited, setIsEdited] = useState(false);
+
 const List = (props) => {
 
   const onDelete = (id) => {
@@ -13,6 +15,7 @@ const List = (props) => {
       todoItem.id===id ? {...todoItem, checked: !todoItem.checked} : todoItem
     ))
   };
+  
 
   return (
     <div className='list' key={props.id}>
@@ -24,8 +27,8 @@ const List = (props) => {
 
       {/* <span className={`listContent &{ todoItem.checked ? 'checked' : '' }`}>{todoItem.text}</span> */}
       <span className={ "listContent" + (props.checked ? " checked" : '')}>{props.text}</span>
-
-      <button className="editBtn">수정</button>
+      
+      <button className="editBtn" onClick={() => setIsEdited(true)}>수정</button>
 
       <button 
         type='button' 

@@ -33,27 +33,35 @@ h1 {
   padding-bottom: 1rem;
 }
 
+.listContent {
+  display: flex;
+  flex: 14;
+}
+
 .list {
   padding-bottom: 1rem;
   display: flex;
   flex-direction: row;
 }
 
-.listContent {
-  display: flex;
-  flex: 14;
-}
-
 .deleteBtn {
   /* float: right; */
   display: flex;
-  flex: 1;
+  flex: 0.5;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  font-size: 1.5rem;
 }
 
 .editBtn {
   display: flex;
   flex: 1;
   margin-right: 20px;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  font-size: 1.5rem;
 }
 
 .form {
@@ -73,4 +81,8 @@ h1 {
 
 .checked {
   text-decoration: line-through;
+}
+
+.checkbox {
+  margin-right: 10px;
 }
