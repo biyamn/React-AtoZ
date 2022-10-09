@@ -4,6 +4,7 @@ const Form = (props) => {
 
   const onChangeInput = (e) => {
     props.setText(e.target.value);
+    console.log("changed");
   };
 
   return (

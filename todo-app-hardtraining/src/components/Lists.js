@@ -21,6 +21,7 @@ const Lists = (props) => {
     
     props.setTodoList(nextTodoList);
     props.setText('');
+    console.log(props.todoList);
   };
 
   return (

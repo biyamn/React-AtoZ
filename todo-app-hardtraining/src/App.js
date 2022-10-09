@@ -10,7 +10,7 @@ function App() {
   const [text, setText] = useState('');
 
   const [todoList, setTodoList] = useState([]);
-
+  console.log("App.js")
 
   return (
     <div className='container'>

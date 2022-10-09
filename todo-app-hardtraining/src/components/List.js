@@ -6,6 +6,7 @@ const List = (props) => {
     props.setTodoList(props.todoList.map(todoItem=>
       todoItem.id===id ? {...todoItem, edited: !todoItem.edited} : todoItem
     ))
+    console.log("edited");
   };
 
   const onDelete = (id) => {
@@ -18,6 +19,7 @@ const List = (props) => {
     props.setTodoList(props.todoList.map(todoItem=>
       todoItem.id===id ? {...todoItem, checked: !todoItem.checked} : todoItem
     ))
+    console.log(props.checked);
   };
   
 
