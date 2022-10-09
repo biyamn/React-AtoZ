@@ -1,8 +1,12 @@
-import React from 'react';
-
-const [idEdited, setIsEdited] = useState(false);
+import React, { useState } from 'react';
 
 const List = (props) => {
+
+  const editedToggle = (id) => {
+    props.setTodoList(props.todoList.map(todoItem=>
+      todoItem.id===id ? {...todoItem, edited: !todoItem.edited} : todoItem
+    ))
+  };
 
   const onDelete = (id) => {
     props.setTodoList(props.todoList.filter(todoItem=>
@@ -26,9 +30,13 @@ const List = (props) => {
       />
 
       {/* <span className={`listContent &{ todoItem.checked ? 'checked' : '' }`}>{todoItem.text}</span> */}
-      <span className={ "listContent" + (props.checked ? " checked" : '')}>{props.text}</span>
+      <span  className={ "listContent" + (props.checked ? " checked" : '')}>{props.text}</span>
       
-      <button className="editBtn" onClick={() => setIsEdited(true)}>수정</button>
+      <button 
+        className="editBtn" 
+        onClick={() => editedToggle(props.id)}>
+        {props.edited ? "저장" : "수정"}
+      </button>
 
       <button 
         type='button' 

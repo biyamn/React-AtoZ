@@ -16,6 +16,7 @@ const Lists = (props) => {
       id: props.no.current++,
       text: props.text,
       checked: false,
+      edited: false,
     });
     
     props.setTodoList(nextTodoList);
@@ -27,14 +28,16 @@ const Lists = (props) => {
           <div className='lists'>
             {props.todoList.map((todoItem) =>(
               // Warning: Each child in a list should have a unique "key" prop 때문에 key 추가
+              // map을 쓸 때는 key를 꼭 써줘야 함
               <List 
                 // todoItem={todoItem} 
+                key={todoItem.id}
                 id={todoItem.id}
                 checked={todoItem.checked}
                 text={todoItem.text}
                 todoList={props.todoList}
                 setTodoList={props.setTodoList}
-                
+                edited={todoItem.edited}
               />
             ))}
           </div>
